@@ -15,21 +15,10 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StopCircleOutlinedIcon from '@mui/icons-material/StopCircleOutlined';
 
 import { connect } from "react-redux"
-import { Margin } from '@mui/icons-material';
 
 
 
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
 
  function RadioItem({img,text,item,setState,index,setRadio,setPlay,setUrl,playing,url,setName
 
@@ -60,6 +49,7 @@ const ExpandMore = styled((props) => {
 fontSize="large"
 onClick={()=>{
  setUrl(item.uri)
+ document.title = item.name;
  setPlay(true)
 setState(item.uri)
 setName(item.name)

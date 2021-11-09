@@ -17,7 +17,8 @@ return(
 <Box 
 sx={{
    
-    backgroundColor: '#030303'
+    // backgroundColor: '#030303'
+    marginBottom:20
    
   }}
 >
@@ -26,9 +27,10 @@ sx={{
 >
 
 { 
+
 api.map((item,index) =>( 
          
-         <Grid item xs={12} md={3}
+         <Grid item xs={12} md={2}
          >
          <RadioItem
          index={index}

@@ -1,20 +1,4 @@
-const api=[{
-    image_url:"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/1307.jpg",
-    name:"Радио ENERGY (Radio NRJ Moscow)",
-    uri:"https://ic7.101.ru:8000/a99",
-    channel_id:1307,
-    countryCode:"ua",
-    genre:"EDM - Electronic Dance Music,Pop Music"
-    },
-   
-    {
-        image_url:"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/16546.jpg",
-        name:"Хіт FM (Hit FM)",
-        uri:"https://online.hitfm.ua/HitFM",
-        channel_id:16546,
-        countryCode:"ua",
-        genre:"Pop Music"
-        },
+const api=[
     {
     image_url:"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/3626.jpg",
     name:"Хіт FM (Hit FM) - Top",

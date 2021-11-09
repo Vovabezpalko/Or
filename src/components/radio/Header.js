@@ -23,7 +23,7 @@ function SearchAppBar({
     const [value,setValue]=useState('')
   return (
     <Box sx={{ flexGrow: 1, }}>
-      <AppBar position="staic" sx={{backgroundColor:"#030303",marginBottom:2}}>
+      <AppBar position="staic" sx={{marginBottom:2}}>
         <Toolbar>
          
           <Typography

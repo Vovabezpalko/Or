@@ -8,7 +8,7 @@ const SearchResult=({filteredPersons,setState,setRadio,setPlay,playing,setUrl,se
     
 
     useEffect(()=>{
-        console.log(filteredPersons)
+       
     }, filteredPersons)
     
  return(
@@ -25,6 +25,12 @@ style={{
 >
 
 { filteredPersons.map((item,index) =>( 
+<>
+
+
+
+
+
         <SearchItem
 item={item}
 setState={setState}
@@ -40,6 +46,7 @@ setState={setState}
   url={url}
 
         />
+        </>
    
 ))}
 

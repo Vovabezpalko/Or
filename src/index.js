@@ -6,13 +6,25 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import { createStore } from 'redux';
 import rootReducer from "./reducers/index";
+import { ThemeProvider } from '@emotion/react';
+import { createTheme } from '@mui/material/styles';
 
 
 const store = createStore(rootReducer);
+const theme=createTheme({
+palette:{
+  mode: 'dark',
+  primary:{
+    main:'#61dafb'
+  },mode:'dark'
+}
+});
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <ThemeProvider theme={theme}>
+    <App/>
+    </ThemeProvider>
   </Provider>,
   document.getElementById('root')
 );

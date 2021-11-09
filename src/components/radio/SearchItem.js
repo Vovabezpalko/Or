@@ -24,6 +24,7 @@ onClick={()=>{
  setPlay(true)
 setState(item.uri)
 setName(item.name)
+document.title = item.name;
  
  }}
 
